@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+      <p id="description">Please take a moment to fill out our survey.</p>
+        
+          <form id="survey-form">
+              <label for="name" id="name-label">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                      
+                          <label for="email" id="email-label">Email:</label>
+                              <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                  
+                                      <label for="number" id="number-label">Age:</label>
+                                          <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age" required>
+                                              
+                                                  <label for="dropdown">Select your gender:</label>
+                                                      <select id="dropdown" name="gender">
+                                                            <option value="male">Male</option>
+                                                                  <option value="female">Female</option>
+                                                                        <option value="other">Other</option>
+                                                                            </select>
+                                                                                
+                                                                                    <label>Do you have any pets?</label>
+                                                                                        <input type="radio" id="yes" name="pets" value="yes">
+                                                                                            <label for="yes">Yes</label>
+                                                                                                <input type="radio" id="no" name="pets" value="no">
+                                                                                                    <label for="no">No</label>
+                                                                                                        
+                                                                                                            <label>Which pets do you have? (Select all that apply)</label>
+                                                                                                                <input type="checkbox" id="dog" name="pet" value="dog">
+                                                                                                                    <label for="dog">Dog</label>
+                                                                                                                        <input type="checkbox" id="cat" name="pet" value="cat">
+                                                                                                                            <label for="cat">Cat</label>
+                                                                                                                                <input type="checkbox" id="other-pet" name="pet" value="other">
+                                                                                                                                    <label for="other-pet">Other</label>
+                                                                                                                                        
+                                                                                                                                            <label for="comments">Additional comments:</label>
+                                                                                                                                                <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
+                                                                                                                                                    
+                                                                                                                                                        <button type="submit" id="submit">Submit</button>
+                                                                                                                                                          </form>
+                                                                                                                                                          </body>
+                                                                                                                                                          </html>
