@@ -1,0 +1,24 @@
+html {background-color: blueviolet;}
+#survey-form {background-color: blue; 
+    background-position: center; 
+    margin: 0 auto; 
+    min-width: 300px; 
+    max-width: 900px;}
+#title, #description {color: white; 
+    text-align: center; 
+    font-style: normal;}
+#name-label, #email-label, #number-label, #role, #refer, #feature, #improve, #suggestions {color: white;}
+#definately, #maybe, #not-sure {color: white;}
+#front-end-projects, #back-end-projects, #data-visualization, #challenges, #open-source-community, #gitter-help-rooms, #videos, #city-meetups, #wiki, #forum, #additional-courses {color: white;}
+#name, #email, #number {width: 95%;}
+#dropdown, #fav {width: 95%;}
+#comments {width: 95%;}
+#button {width: 95%; 
+    background-color: royalblue; 
+    color: white;}
+    #support {background-color: darkgreen;}
+    #support-us {background-color: black; 
+    color: white;
+text-align: center;
+font-style: inherit;}
+#crypto, #bank {color: rgb(255, 255, 255);}

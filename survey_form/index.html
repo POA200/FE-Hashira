@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1 id="title">Survey Form</h1>
-      <p id="description">Please take a moment to fill out our survey.</p>
-        
-          <form id="survey-form">
-              <label for="name" id="name-label">Name:</label>
-                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                      
-                          <label for="email" id="email-label">Email:</label>
-                              <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                                  
-                                      <label for="number" id="number-label">Age:</label>
-                                          <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age" required>
-                                              
-                                                  <label for="dropdown">Select your gender:</label>
-                                                      <select id="dropdown" name="gender">
-                                                            <option value="male">Male</option>
-                                                                  <option value="female">Female</option>
-                                                                        <option value="other">Other</option>
-                                                                            </select>
-                                                                                
-                                                                                    <label>Do you have any pets?</label>
-                                                                                        <input type="radio" id="yes" name="pets" value="yes">
-                                                                                            <label for="yes">Yes</label>
-                                                                                                <input type="radio" id="no" name="pets" value="no">
-                                                                                                    <label for="no">No</label>
-                                                                                                        
-                                                                                                            <label>Which pets do you have? (Select all that apply)</label>
-                                                                                                                <input type="checkbox" id="dog" name="pet" value="dog">
-                                                                                                                    <label for="dog">Dog</label>
-                                                                                                                        <input type="checkbox" id="cat" name="pet" value="cat">
-                                                                                                                            <label for="cat">Cat</label>
-                                                                                                                                <input type="checkbox" id="other-pet" name="pet" value="other">
-                                                                                                                                    <label for="other-pet">Other</label>
-                                                                                                                                        
-                                                                                                                                            <label for="comments">Additional comments:</label>
-                                                                                                                                                <textarea id="comments" name="comments" placeholder="Enter your comments here"></textarea>
-                                                                                                                                                    
-                                                                                                                                                        <button type="submit" id="submit">Submit</button>
-                                                                                                                                                          </form>
-                                                                                                                                                          </body>
-                                                                                                                                                          </html>
+    <head><link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body id="body">
+        <h1 id="title">Peter Survey Form</h1>
+        <p id="description" >Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+            <label id="name-label">Name</label><br>
+            <input id="name" type="text" placeholder="Enter Your Name" required/><br>
+            <label id="email-label">Email</label><br>
+            <input id="email" placeholder="Enter Your Email" required /><br>
+            <label id="number-label">Age(optional)</label><br>
+            <input id="number" min="18" max="200" placeholder="Age" /><br>
+            <p id="role">Which option best describes your current role?</p>
+            <select id="dropdown">
+                <option>Select an option</option>
+                <option>Student</option>
+                <option>Full time job</option>
+                <option>Full time learner</option>
+                <option>Prefer not to say</option>
+                <option>Other</option>
+            </select><br>
+            <p id="refer">Would you recommend us to a friend?</p>
+            <input name="rad" type="radio" checked />
+            <label id="definately">Definately</label><br>
+            <input name="rad" type="radio" />
+            <label id="maybe">Maybe</label><br>
+            <input name="rad" type="radio" />
+            <label id="not-sure">Not Sure</label><br>
+            <p id="feature">What's your favourite feature?</p>
+            <select id="fav">
+                <option>select an option</option>
+                <option>Challenges</option>
+                <option>Projects</option>
+                <option>Community</option>
+                <option>Open Source</option>
+            </select>
+            <p id="improve">What would you like to see improved? (check all that apply)</p>
+            <input type="checkbox" id="front-end-projects" />
+            <label id="front-end-projects">Front-end-projects</label><br>
+            <input type="checkbox" id="back-end-projects" />
+            <label id="back-end-projects">Back-end projects</label><br>
+            <input type="checkbox" id="data-visualization" />
+            <label id="data-visualization">Data visualization</label><br>
+            <input type="checkbox" id="challenges" />
+            <label id="challenges">Challenges</label><br>
+            <input type="checkbox" id="open-source-community" />
+            <label id="open-source-community">Open source community</label><br>
+            <input type="checkbox" id="gitter-help-rooms" />
+            <label id="gitter-help-rooms">Gitter help rooms</label><br>
+            <input type="checkbox" id="videos" />
+            <label id="videos">Videos</label><br>
+            <input type="checkbox" id="city-meetups" />
+            <label id="city-meetups">City meetups</label><br>
+            <input type="checkbox" id="wiki" />
+            <label id="wiki">Wiki</label><br>
+            <input type="checkbox" id="forum" />
+            <label id="forum">Forum</label><br>
+            <input type="checkbox" id="additional-courses" />
+            <label id="additional-courses">Additional courses</label><br>
+            <P id="suggestions">Any comments or suggestions?</P>
+            <textarea id="comments" rows="4" cols="30" placeholder="Enter your comment here..."></textarea><br>
+            <button id="button">Submit</button>
+        </form>
+        <form id="support">
+            <p id="support-us"><b>SUPPORT US</b></p>
+        <p id="crypto"> STX- SP2BWMDQ6FFHCRGRP1VCAXHSMYTDY8J0T0J5AZV4Q</p>
+        <P id="crypto"> SOL- GZNN5LHs8tYn999xj8JXKpjT8ZjGDrcYPC96w5xonZA2</P>
+        <p id="crypto"> TON- UQDit-vdQqL1IT9Xw-pFQbywgILTXONG8ZrXWDvEhGmKfpLL</p>
+        <p id="crypto"> ETH- 0xf50c7bEB4ABe2C6e0983a142B2d44eC0384DabDa</p>
+        <p id="bank">local bank- 9037805239 opay / palmpay</p>
+        <p id="bank">BOSS ABEG! THANK YOU</p>
+    </form>
+    </body>
+</html>
